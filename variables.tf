@@ -16,3 +16,17 @@ variable "iam_role_tags" {
   type    = map(string)
   default = {}
 }
+
+variable "oidc_arn" {
+  type = string
+}
+
+variable "github_owner" {
+  type    = string
+  default = ""
+}
+
+variable "ec2_policy_name" {
+  type    = string
+  default = ""
+}
